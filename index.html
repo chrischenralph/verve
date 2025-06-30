@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html onclick="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Verve est. 2012</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <header class="fixed top-0 w-dvw z-[99]">
+      <nav
+        class="py-[10px] md:px-16 px-8 md:flex md:justify-between md:align-center"
+      >
+        <div class="cursor-pointer flex justify-between items-center">
+          <a href="index.html"
+            ><img src="assets/icon-logo.png" alt="" class="h-[50px]" />
+          </a>
+          <span class="md:text-3xl text-2xl cursor-pointer md:hidden block"
+            ><ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+        <!--Nav links-->
+        <ul
+          class="text-[13px] md:flex md:items-center md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-out duration-1000"
+        >
+          <li class="mx-8 md:my-0 my-4">
+            <a class="" href="#">Home</a>
+          </li>
+          <li class="mx-8 md:my-0 my-4">
+            <a class="" href="#about">About</a>
+          </li>
+          <li class="mx-8 md:my-0 my-4">
+            <a class="" href="#performance">Performance</a>
+          </li>
+          <li class="mx-8 md:my-0 my-4">
+            <a class="" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Home Section-->
+    <section class="mt-16">
+      <div
+        class="w-full h-screen max-h-[32rem] md:px-24 px-8 md:py-16 py-4 relative overflow-hidden block z-10 before:content-[''] before:absolute before:inset-0 before:block before:bg-black before:opacity-[75%] before:z-[-5] saturate-[20%]"
+      >
+        <div class="text-center md:my-12">
+          <div class="md:mt-0 mt-16">
+            <span class="text-white">
+              <h1 class="md:text-lg text-md md:mb-12 mb-20 font-extralight">
+                Passion, Pride, and Success
+              </h1>
+              <h1
+                class="home-title uppercase md:text-6xl text-4xl md:mb-12 mb-20 md:my-0 my-8 font-bold tracking-wide"
+              >
+                Do it big, Do it right, and Do it with style
+              </h1>
+              <h1 class="md:text-lg text-md font-extralight">
+                Unleash your passion and embrace the rythym
+              </h1>
+            </span>
+          </div>
+          <div class="z-[-10] absolute top-0 left-0 w-screen h-full">
+            <video
+              class="h-full w-full object-cover"
+              src="assets/backdrop-home.mp4"
+              loop
+              autoplay
+              muted
+              playsinline
+            ></video>
+          </div>
+        </div>
+      </div>
+      <!--Achievements Banner-->
+      <div
+        class="flex md:flex-row flex-col justify-center items-center text-center md:pt-4 py-2 ach-ban"
+      >
+        <div class="flex flex-row w-full justify-center items-center">
+          <div class="py-6 px-8 md:border-r-2 border-gray-400 w-3/6">
+            <h1 class="">
+              <span class="md:text-xl text-lg font-semibold tracking-wide"
+                >20+</span
+              ><br />
+              <span class="md:text-lg text-sm font-extralight"
+                >Years Experience</span
+              >
+            </h1>
+          </div>
+          <div class="py-6 px-8 md:border-r-2 border-gray-400 w-3/6">
+            <h1 class="">
+              <span class="md:text-xl text-lg font-semibold tracking-wide"
+                >70+</span
+              ><br />
+              <span class="md:text-lg text-sm font-extralight"
+                >Active Members</span
+              >
+            </h1>
+          </div>
+        </div>
+        <div class="flex flex-row w-full justify-center items-center">
+          <div class="py-6 px-8 md:border-r-2 border-gray-400 w-3/6">
+            <h1 class="r">
+              <span class="md:text-xl text-lg font-semibold tracking-wide"
+                >5</span
+              ><br />
+              <span class="md:text-lg text-sm font-extralight"
+                >Special Awards</span
+              >
+            </h1>
+          </div>
+          <div class="py-6 px-8 w-3/6">
+            <h1 class="">
+              <span class="md:text-xl text-lg font-semibold tracking-wide"
+                >4</span
+              ><br />
+              <span class="md:text-lg text-sm font-extralight"
+                >Active Coaches</span
+              >
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About Section-->
+    <section class="py-8 text-white bg-[#212121] con" id="about">
+      <div class="text-center w-full mx-auto md:p-8 mt-4">
+        <h1
+          class="uppercase md:text-6xl text-2xl font-[800] home-title bg-clip-text text-transparent bg-gradient-to-r from-[#7289da] to-[#2ebf91]"
+        >
+          Vigorous Energetic Radical Valiant Entertainers
+        </h1>
+        <p
+          class="md:mt-12 mt-8 md:text-[15px] text-[13px] md:px-24 px-8 text-xs leading-relaxed font-extralight"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          necessitatibus fugiat, saepe minima repudiandae vel odio doloribus,
+          ratione non ipsa cum delectus velit facilis accusantium sint maiores?
+          Iusto, blanditiis quis. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Consequuntur, autem saepe minima voluptates
+        </p>
+      </div>
+      <div
+        class="flex md:flex-row flex-col md:gap-16 gap-12 md:px-8 px-6 mt-12 justify-center text-center"
+      >
+        <div
+          class="miss-con md:w-5/12 px-8 pt-8 md:pb-24 pb-16 border-2 border-[#393E46] hover:border-[#9d9d9d] transition-all duration-700 hover:rounded-lg hover:-translate-y-5"
+        >
+          <h1
+            class="mb-8 text-xl font-bold tracking-widest bg-clip-text text-transparent bg-gradient-to-b from-[#7289da] to-[#2ebf91]"
+          >
+            Our Mission
+          </h1>
+          <p class="text-justify md:text-[15px] text-[13px] font-extralight">
+            To inspire our fellow students pursue their outgoing crafts, talents
+            and skills through the arts in dancing and singing. Nurturing them
+            in discipline, compassion, and love.
+          </p>
+        </div>
+        <div
+          class="vis-con md:w-5/12 px-4 pt-8 md:pb-auto pb-12 border-2 border-[#393E46] hover:border-[#9d9d9d] transition-all duration-700 hover:rounded-lg hover:-translate-y-5"
+        >
+          <h1
+            class="mb-8 text-xl font-bold tracking-widest bg-clip-text text-transparent bg-gradient-to-b from-[#7289da] to-[#2ebf91]"
+          >
+            Our Vision
+          </h1>
+          <p class="text-justify md:text-[15px] text-[13px] font-extralight">
+            To be known as one of the top organization in Our Lady of Fatima
+            University - Quezon City Campus; providing great talents,
+            showmanship, enthusiasm, energy, expression of ideas especially in
+            artistic performance or composition and culture for entertainment
+            through dancing and singing.
+          </p>
+        </div>
+      </div>
+      <div class="md:mt-24 mt-16 md:w-1/3 md:ml-24 ml-8 md:mb-16 mb-12">
+        <div class="">
+          <p
+            class="md:text-lg text-[13px] md:mb-4 mb-2 bg-clip-text text-transparent bg-gradient-to-r from-[#7289da] to-[#2ebf91]"
+          >
+            Get to know us
+          </p>
+          <h1
+            class="md:text-5xl text-[28px] font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#7289da] to-[#2ebf91]"
+          >
+            Our Coaches
+          </h1>
+        </div>
+      </div>
+      <div
+        class="grid md:grid-rows-1 grid-rows-2 grid-flow-col gap-4 md:mx-20 mx-8 md:mb-24 mb-16"
+      >
+        <div
+          class="coach-container w-full rounded-lg overflow-hidden hover:scale-95 transition-all duration-500"
+        >
+          <img class="" src="assets/coach-card-1-samp.jpg" alt="" />
+          <div class="text-center md:py-6 py-4 px-2">
+            <h1 class="md:text-2xl text-md mb-2 md:font-bold font-semibold">
+              Ralph Chrischen
+            </h1>
+            <p class="md:text-md text-[12px] tracking-widest">Senior Member</p>
+          </div>
+        </div>
+        <div
+          class="coach-container w-full rounded-lg overflow-hidden hover:scale-95 transition-all duration-500"
+        >
+          <img class="" src="assets/coach-card-1-samp.jpg" alt="" />
+          <div class="text-center md:py-6 py-4 px-2">
+            <h1 class="md:text-2xl text-md mb-2 md:font-bold font-semibold">
+              Ralph Chrischen
+            </h1>
+            <p class="md:text-md text-[12px] tracking-widest">Senior Member</p>
+          </div>
+        </div>
+        <div
+          class="coach-container w-full rounded-lg overflow-hidden hover:scale-95 transition-all duration-500"
+        >
+          <img class="" src="assets/coach-card-1-samp.jpg" alt="" />
+          <div class="text-center md:py-6 py-4 px-2">
+            <h1 class="md:text-2xl text-md mb-2 md:font-bold font-semibold">
+              Ralph Chrischen
+            </h1>
+            <p class="md:text-md text-[12px] tracking-widest">Senior Member</p>
+          </div>
+        </div>
+        <div
+          class="coach-container w-full rounded-lg overflow-hidden hover:scale-95 transition-all duration-500"
+        >
+          <img class="" src="assets/coach-card-1-samp.jpg" alt="" />
+          <div class="text-center md:py-6 py-4 px-2">
+            <h1 class="md:text-2xl text-md mb-2 md:font-bold font-semibold">
+              Ralph Chrischen
+            </h1>
+            <p class="md:text-md text-[12px] tracking-widest">Senior Member</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--<div class="md:h-96 md:mt-[-40px] mt-[-60px] z-[1] relative">
+      <img class="object-cover" src="assets/wave.svg" alt="" />
+    </div>-->
+    <!--Performances Section-->
+    <section id="performance" class="overflow-hidden text-white md:mt-12">
+      <div class="md:text-right text-center md:mr-16 md:mt-0 mt-8">
+        <h1
+          class="md:text-5xl text-2xl font-[900] tracking-wide text-[#212121]"
+        >
+          "Explore the Rythm"
+        </h1>
+      </div>
+      <div class="bg-[#212121] md:mt-12 mt-4 py-4 perf-con">
+        <div
+          class="flex md:flex-row flex-col justify-center px-4 md:gap-2 mt-8"
+        >
+          <div class="text-center md:w-1/2 p-2 my-auto">
+            <h1 class="md:text-4xl text-lg md:font-semibold">
+              HipHop Dance Intercampus <br />Competition Champion 2024
+            </h1>
+          </div>
+          <div class="md:w-1/2 p-2">
+            <video
+              src="assets/vid-1.mp4 "
+              controls
+              class="max-h-80 mx-auto rounded-md"
+            ></video>
+          </div>
+        </div>
+        <div
+          class="flex md:flex-row flex-col-reverse justify-center px-4 md:gap-2 md:mt-12 mt-8"
+        >
+          <div class="md:w-1/2 p-2">
+            <video
+              src="assets/vid-2.mp4 "
+              controls
+              class="max-h-80 mx-auto rounded-md"
+            ></video>
+          </div>
+          <div class="text-center md:w-1/2 p-2 my-auto">
+            <h1 class="md:text-4xl text-lg md:font-semibold">
+              HipHop Dance Intercampus <br />Competition Champion 2024
+            </h1>
+          </div>
+        </div>
+        <div
+          class="flex md:flex-row flex-col justify-center px-4 md:gap-2 md:mt-12 mt-8"
+        >
+          <div class="text-center md:w-1/2 p-2 my-auto">
+            <h1 class="md:text-4xl text-lg md:font-semibold">
+              HipHop Dance Intercampus <br />Competition Champion 2024
+            </h1>
+          </div>
+          <div class="md:w-1/2 p-2">
+            <video
+              src="assets/vid-3.mp4"
+              controls
+              class="max-h-80 mx-auto rounded-md"
+            ></video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
